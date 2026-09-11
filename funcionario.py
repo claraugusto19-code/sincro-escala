@@ -5,6 +5,13 @@ path_bd = Path("BD") / "funcionario_bd.txt"
 funcionarios = []
 
 def cadastrar_funcionários():
+    print("======================================")
+    print("      CADASTRO DE FUNCIONÁRIOS")
+    print("======================================")
+    print('')
+    listar_funcionários()
+    print("======================================")
+    print('')
     funcionário = input("digite o nome do funcionario: ")
     with open(path_bd,"a", encoding="utf-8") as arquivo:
             arquivo.write(f"{funcionário}\n")
@@ -20,7 +27,6 @@ def cadastrar_funcionários():
         cadastrar_funcionários()
     if seguir_cadastro == "2":
         print("cadastro concluido ✅")
-
 
 
 
