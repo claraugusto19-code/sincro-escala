@@ -1,6 +1,7 @@
 from funcionario import cadastrar_funcionarios, listar_funcionarios, excluir_funcionarios
 from escala import cadastrar_escala, excluir_escala, listar_escalas
-#from relacionamento import menu_participacoes
+from relacionamentos import menu_participacoes
+
 
 sair_do_sistema = False
 
@@ -69,7 +70,7 @@ while not sair_do_sistema:
             excluir_escala()
         case "7":
             print("")
-            #menu_participacoes()
+            menu_participacoes()
         case "0":
             sair()
             break
